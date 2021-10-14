@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,19 +9,19 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 	<title>PROJETO FRANCO </title>
 	<nav class= "nav-menu"> 
-      <span class="navbar-brand"><img src="assets/img/logo.png"></span><span class="navbar-brand"> STC <br>FRANCO</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <a class="nav-link" href="index.html"><i class="fas fa-home"></i>&nbsp;&nbsp;Inicio</a>
-      <a class="nav-link" href="Sobre.html"><i class="fas fa-user-circle"></i>&nbsp;&nbsp;Sobre Mim</a>
-      <a class="nav-link" href="Projeto.html"><i class="fas fa-code"></i>&nbsp;&nbsp;Projeto</a>
-      <a class="nav-link" href="Contato.html"><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;Contato</a>
+		
+      <span class="navbar-brand"><img src="assets/img/logo.png"></span><span class="navbar-brand"> STC <br>FRANCO</span>
+      <a  href="index.html"><span class="txt-font1"><i class=" fas fa-home"></i></span><br>Inicio</a>
+      <a  href="Sobre.html"><span class="txt-font2"><i class=" fas fa-user-circle"></i></span><br>Sobre Mim</a>
+      <a  href="Projeto.html"><span class="txt-font3"><i class=" fas fa-code"></i></span><br>Projeto</a>
+      <a  href="Contato.html"><span class="txt-font4"><i class=" fas fa-mobile-alt"></i></span><br>Contato</a>
        <img id="bg1" src="assets/img/2.jpg">
-
     </nav>
 </head>
 <body>
-
-<div > <img id="banner"src="assets/img/img2.jpg" alt="projeto franco"></div>
-<h2 class="txt-center"><i class="far fa-thumbs-up"></i>&nbsp;&nbsp;MEUS PROJETOS</h2>
+<div class="banner">
+ <img src="assets/img/img2.jpg" alt="projeto franco"></div>
+<h2 class="txt-center"><i class="far fa-thumbs-up"></i><br>MEUS PROJETOS</h2>
  <div class=back-fon>
  	<div class="bloque-isq">	
  		<div>
@@ -39,9 +39,8 @@
  		<div>
  		 <img src="assets/img/img6.jpeg">	
  		 <h1>T.I. EM INFORMATICA</h1>
-          <p>		Meu nome é ELIECER FRANCO venezuelano, tenho formação como T.I. Na área de Informática, também tenho mais de 15 anos de experiência na área e atualmente trabalho como freelance Como estrangeiro, tenho muitos desafios para o meu empreendedorismo e estabilidade, mas cada um deles tem me fortalecido como pessoa no âmbito social, econômico e intelectual.</p>  
-        
-         
+          <p>Meu nome é ELIECER FRANCO venezuelano, tenho formação como T.I. Na área de Informática, também tenho mais de 15 anos de experiência na área e atualmente trabalho como freelance Como estrangeiro, tenho muitos desafios para o meu empreendedorismo e estabilidade, mas cada um deles tem me fortalecido como pessoa no âmbito social, econômico e intelectual.</p>  
+           
  		</div>
  			 
  		<button type="button" class="btn-success" href="index.html">Saiba mais</button>
@@ -50,9 +49,9 @@
 
  	
 
- 	<div>
- 	<div > <img id="banner"src="assets/img/img3.jpg" alt="projeto franco"></div>
- 		<h2 class="txt-cn"><i class="fas fa-list-ul"></i>&nbsp;&nbsp;CONTEUDO</h2>
+ 	<div class="banner">
+ 	<div> <img src="assets/img/img3.jpg" alt="projeto franco"></div>
+ 		<h2 class="txt-cn"><i class="fas fa-list-ul"></i><br>CONTEUDO</h2>
  	</div>
 
  	 <div class=back-fon>
@@ -63,10 +62,10 @@
          	<iframe class="bloque-tv"width="280" height="245" src="https://www.youtube.com/embed/mP_cuFfhIFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
  		</div>
  			 
- 		<button type="button" class="btn-success"   href="index.html">Saiba mais</button>
+ 		<button type="button" class="btn-success" href="index.html">Saiba mais</button>
  		</div>
  	</div>
-<h2 class="txt-cn"><i class="fas fa-tty"></i>&nbsp;&nbsp;CONTATO</h2>
+<h2 class="txt-cn"><i class="fas fa-tty"></i><br>CONTATO</h2>
  <div class=back-fon> 	
  	<div class="bloque-cn">	
 
@@ -75,33 +74,26 @@
           	
 			<form action="email" class="formulario" name="Contato" method="POST">
 				<div>
-					<div class="input-cont">
-						<label class="label_nb" for="nome"><i class="fas fa-user"></i></label>
-						<input type="text" id="nome" name="nome" placeholder="inserir seu nome">
+					<div>
 						
+						<input type="text" id="nome" name="nome" placeholder="  inserir seu nome">
+						<label for="nome"><i class="fas fa-user"></i></label>
 					</div>
-					<div class="input-cont">
-						<input type="email" id="correio" name="email"  placeholder="inserir seu email">
-						<label class="label_email" for="correio"><i class="fas fa-at"></i></label>
+					<div>
+						<input type="email" id="correio" name="email"  placeholder="  inserir seu email">
+						<label for="correio"><i class="fas fa-at"></i></label>
 					</div>
-					<div class="input-cont">
-						<input type="password" id="pass" name="pass"  placeholder="inserir sua senha">
-						<label class="label_pass" for="pass"><i class="fas fa-unlock"></i></label>
-					</div>
-					<div class="input-selc">
-						<input type="checkbox" name="terminos" id="terminos" value="true">
-						<label class="terminos" for="terminos">Aceito os Terminos y Condicioes</label>
-					</div>
-						
-					<input class="btn-info" type="submit" id="btn-submit" value="Enviar">
+					<textarea name="textarea" rows="10" cols="38">Escriva sua menssagem aqui</textarea>		
+					
+					<button type="submit" id="btn-submit" value="Enviar">Enviar</button>
+
 				</div>
 			</form>
 		</div>
  	</div>
-
-  
+ 			
 		<footer class="footer">
-   <p id="pf">Copyright (c) 2021  All rights reserved ELIECER FRANCO</p>
+   <p >Copyright (c) 2021  All rights reserved ELIECER FRANCO</p>
 	</footer>
 	
 </body>
