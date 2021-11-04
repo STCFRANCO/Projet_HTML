@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
 body {
   margin: 0;
 
@@ -148,6 +149,35 @@ h1, h2, h3, h4, h5, h6 {
              0 0  0 2px rgb(255,255,255),
              0.3em 0.3em 1em rgba(0,0,0,0.3);
 }
+ .bloque-dh h1{
+  float: right;
+  color: #007953;
+  font-family: monospace;
+  font-size: 30px;
+  margin: 90px 200px 10px 60px;
+ 
+}
+
+.bloque-dh p{
+  width: 400px;
+  margin: 10px 180px 10px 0px;
+  float: right;
+  color: #111015;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: justify;
+  text-indent: 40px;
+}
+ .bloque-dh button{
+  
+  float:right;
+  color: #007953;
+  font-family: sans-serif;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px 320px 50px 0px;
+}
+
 
 .bloque-S {
  
@@ -281,35 +311,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
- .bloque-dh h1{
-  float: right;
-  color: #007953;
-  font-family: monospace;
-  font-size: 30px;
-  margin: 90px 200px 10px 60px;
- 
-}
-
-.bloque-dh p{
-  width: 400px;
-  margin: 10px 180px 10px 0px;
-  float: right;
-  color: #111015;
-  font-family: sans-serif;
-  font-size: 18px;
-  text-align: justify;
-  text-indent: 40px;
-}
- .bloque-dh button{
-  
-  float:right;
-  color: #007953;
-  font-family: sans-serif;
-  font-size: 18px;
-  text-align: center;
-  margin: 10px 320px 50px 0px;
-}
-
 .bloque-tv img{
   position: absolute;
   float: left;
@@ -347,6 +348,85 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin: 10px 200px 50px 0px;
 }
+
+
+.bloque-api-left {
+  float: left; 
+  width: 440px;
+  height: 450px;
+  margin:40px 10px 50px 80px;
+  border-radius: 40px;
+  padding: 20px;
+
+  box-shadow:
+       inset 
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+.bloque-api-left img{
+  width: 250px;
+  height:90px;
+  margin:20px 50px 20px 70px
+  
+ 
+}
+
+.bloque-api-left input{
+  float:left;
+  width: 180px;
+  height: 15px;
+  margin: 15px 10px 16px 125px;
+  border-radius: 6px;
+  border-style: solid ;
+
+ }
+
+.bloque-api-right {
+  background-image:  url("assets/img/clima.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  float: right; 
+  width: 440px;
+  height: 450px;
+  margin:40px 100px 50px 10px;
+  border-radius: 40px;
+  padding: 20px;
+
+  box-shadow:
+       inset 
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.bloque-api-right img{
+  float: right;
+  width: 120px;
+  height:100px;
+  border-radius: 20px;
+  margin: 20px 60px;
+
+}
+
+
+ .bloque-api h1{
+  float: left;
+  color: #384450;
+  font-family: monospace;
+  font-size: 30px;
+  margin: 60px 10px 0px 100px;
+ 
+}
+.bloque-api p{
+  float: left;
+  width: 300px;
+  color: #384450;
+  font-family: sans-serif;
+  font-size: 12px;
+  text-align: justify;
+  text-indent: 40px;
+  margin: 80px 0 0 30px;
+}
+
 
 .bloque-cn {
  
@@ -448,6 +528,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
+.form-cep input{
+  float: left;
+  width: 110px;
+  height: 15px;
+  margin: 5px 15px 5px 80px;
+  border-radius: 6px;
+  border-style: solid ;
+
+ }
+ .form-cep  #logradouro{
+  float: left;
+  width: 170px;
+  height: 15px;
+  margin: 15px 15px 12px 80px;
+  border-radius: 6px;
+  border-style: solid ;
+
+ }
+
+.form-cep label{
+    color:  #134f5c;
+  float: right;
+  margin: 16px 130px 0px 0px ;
+}
+
+.form-cep small{
+    color:  #134f5c;
+  float: right;
+  margin: 16px 130px 0px 0px ;
+}
+
+
+
  .formulario input{
   float: left;
   width: 250px;
@@ -493,6 +606,58 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 10px 20px 250px;
 }
 
+.city{
+    font-size: 35px;
+    text-align: center;
+    margin-top:65px;
+}
+
+.date {
+    font-size: 20px;
+    text-align: center
+}
+
+.clima-api input{
+  float: left;
+  width: 160px;
+  height: 20px;
+  margin: 15px 15px 12px 120px;
+    border-radius: 6px;
+  border-style: solid ;
+}
+.container-temp{
+    justify-content: center;
+    cursor: pointer;
+    font-size: 70px;
+    font-weight: 600;
+
+    text-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+.container-temp div{
+  float: left;
+  margin-top: 20px;
+  margin-left: 55px
+
+}
+.container-temp span{
+  float: right;
+ margin-top: 20px;
+ margin-left: 5px 
+
+}
+
+.weather{
+    font-size: 30px;
+    text-align: center;
+    margin: 25px;
+   
+}
+
+.low-high {
+    font-size: 25px;
+    margin-left: 60px;
+
+}
 
 /* Botones */
 .btn-primary {
@@ -610,6 +775,48 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 5px;
 }
 
+.btn-api{
+ float: right;
+  color: #007953;
+  background-color: #fff;
+  border-color: #007953;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 6px;
+  margin-right: 60px;
+}
+
+.btn-api:hover {
+  color: #fff;
+  background-color: #007953;
+  border-color: #007953;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 6px;
+  margin-right: 60px;
+}
+
+.btn-clima{
+ float: right;
+  color: #127bb5;
+  background-color: #fff;
+  border-color: #127bb5;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 6px;
+  margin-right: 90px;
+}
+
+.btn-clima:hover {
+  color: #fff;
+  background-color: #127bb5;
+  border-color: #127bb5;
+  padding: 10px;
+  border-radius: 30px;
+  margin-top: 6px;
+  margin-right: 90px;
+}
+
 
 
 .footer{
@@ -671,6 +878,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .back-fon{
   position: relative;
+  display: flex;
+  color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+ 
+}
+
+.back-api{
   display: flex;
   color: #fff;
   width: 100%;

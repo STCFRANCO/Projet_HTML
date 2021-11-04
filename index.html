@@ -32,6 +32,7 @@
  		</div>
  			 
  		<button type="button" class="btn-danger"  href="index.html">Saiba mais</button>
+
  		</div>
  	</div>
  <div class=back-fon>
@@ -47,7 +48,53 @@
  		</div>
  	</div>
 
- 	
+ 			<div class="back-api">
+ 				<div class="bloque-api-left">	
+ 		 ​				<img src="assets/img/bg_cep.png"/>
+						<input type="text" id="cep" maxlength="9" placeholder=" DIGITE O CEP">
+<button class="btn-api" onclick="return btncep()" type=""><i class="fas fa-search"></i></button>
+
+						<input type="text" id="logradouro" placeholder="endereço"> 
+						<input type="text" id="bairro" placeholder="Bairro">
+						<input type="text" id="localidade" placeholder="Cidade">
+						<input type="text" id="uf" placeholder="UF">
+						
+				</div>	  
+
+		<P id="error"></P>
+ 		    </div>
+
+ 	<div class="bloque-api-right bloque-api">	
+         <div class="card-body">
+        <div class="city">Cidade Exemplo, BR</div>
+        <div class="date">Terça, 1 Dezembro 2020</div>
+        <div class="container-img">
+          <img src="./assets/icons/unknown.png">
+        </div>
+        <div class="container-temp ">
+          <div>22</div>
+          <span>°c</span>
+        </div>
+        <div class="weather py-2">Nublado</div>
+        <div class="low-high">22°c / 23°c</div>
+      </div>
+
+        <div class="clima-api">
+          <input type="text" class="form-control bg-light" placeholder="digite o nome da cidade" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <div class="input-group-append">
+            <button class="btn btn-clima" type="button" id="button-addon2">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+     
+
+
+
+
+ 		
+ 		</div>
+ </div>
 
  	<div class="banner">
  	<div> <img src="assets/img/img3.jpg" alt="projeto franco"></div>
@@ -72,29 +119,32 @@
  		  <img id="bg2" src="assets/img/1.jpg">
  		 <h1>T.I. EM INFORMATICA</h1>
           	
-			<form action="email" class="formulario" name="Contato" method="POST">
-				<div>
-					<div>
-						
-						<input type="text" id="nome" name="nome" placeholder="  inserir seu nome">
-						<label for="nome"><i class="fas fa-user"></i></label>
-					</div>
-					<div>
-						<input type="email" id="correio" name="email"  placeholder="  inserir seu email">
-						<label for="correio"><i class="fas fa-at"></i></label>
-					</div>
-					<textarea name="textarea" rows="10" cols="38">Escriva sua menssagem aqui</textarea>		
-					
-					<button type="submit" id="btn-submit" value="Enviar">Enviar</button>
+			<form action="" class="formulario" id="formulario" method="POST" name="formulario">
+        <div>
+          <div>
+            
+            <input type="text" id="nome" name="nome" maxlength="25"placeholder="  inserir seu nome" />
+            <label for="nome"><i class="fas fa-user"></i></label>
+          </div>
+          <div>
+            <input type="email"  id="email" name="email"  maxlength="50" placeholder="  inserir seu email" />
+            <label for="email"><i class="fas fa-at"></i></label>
+          </div>
+          <textarea type="text"  id="mensagem" name="mensagem" rows="10" cols="38" placeholder=" inserir sua mensagem"></textarea>   
+          
+          <button type="submit" class="btn-form" onclick=" return validar()">Enviar</button>
 
-				</div>
-			</form>
+        </div>
+      </form>
 		</div>
  	</div>
  			
 		<footer class="footer">
    <p >Copyright (c) 2021  All rights reserved ELIECER FRANCO</p>
 	</footer>
-	
+	<script  src="assets/js/function.js"></script>
+	<script  src="assets/js/cep.js"></script>
+  <script src="assets/js/clima.js"></script>
+  <script src="https://kit.fontawesome.com/f0e17cbf2f.js" crossorigin="anonymous"></script>
 </body>
 </html>

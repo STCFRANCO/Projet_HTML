@@ -67,20 +67,20 @@ dedicada ao atendimento e suporte técnico de informática em geral bem como ate
       <img id="bg2" src="assets/img/1.jpg">
      <h1>T.I. EM INFORMATICA</h1>
             
-      <form action="email" class="formulario" name="Contato" method="POST">
+     <form action="" class="formulario" id="formulario" method="POST" name="formulario">
         <div>
           <div>
             
-            <input type="text" id="nome" name="nome" placeholder="  inserir seu nome">
+            <input type="text" id="nome" name="nome" maxlength="25"placeholder="  inserir seu nome" />
             <label for="nome"><i class="fas fa-user"></i></label>
           </div>
           <div>
-            <input type="email" id="correio" name="email"  placeholder="  inserir seu email">
-            <label for="correio"><i class="fas fa-at"></i></label>
+            <input type="email"  id="email" name="email"  maxlength="50" placeholder="  inserir seu email" />
+            <label for="email"><i class="fas fa-at"></i></label>
           </div>
-          <textarea name="textarea" rows="10" cols="38">Escriva sua menssagem aqui</textarea>   
+          <textarea type="text"  id="mensagem" name="mensagem" rows="10" cols="38" placeholder=" inserir sua mensagem"></textarea>   
           
-          <button type="submit" id="btn-submit" value="Enviar">Enviar</button>
+          <button type="submit" class="btn-api" onclick=" return validar()">Enviar</button>
 
         </div>
       </form>
@@ -91,6 +91,6 @@ dedicada ao atendimento e suporte técnico de informática em geral bem como ate
     <footer class="footer">
    <p >Copyright (c) 2021  All rights reserved ELIECER FRANCO</p>
   </footer>
-  
+<script  src="assets/js/function.js"></script>
 </body>
 </html>
